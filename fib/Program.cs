@@ -33,7 +33,7 @@ public class Program
         { 
             throw new ArgumentException($"The handling of negative numbers ({n}) is not handled by this implementation of Fibonacci!"); 
         }
-        var memo = new BigInteger[n];
+        var memo = new BigInteger[n + 1];
         return Fibonacci(n, memo);
     }
 
