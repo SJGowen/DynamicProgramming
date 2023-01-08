@@ -40,8 +40,15 @@ public class Program
     private static BigInteger Fibonacci(int n, BigInteger[] memo)
     {
         if (memo[n] != 0) return memo[n];
-        if (n <= 2) return BigInteger.One;
+
+        if (n <= 2)
+        {
+            memo[n] = BigInteger.One;
+            return memo[n];
+        }
+        
         memo[n] = Fibonacci(n - 1, memo) + Fibonacci(n - 2, memo);
+        
         return memo[n];
     }
 }
