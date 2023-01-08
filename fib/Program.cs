@@ -7,9 +7,16 @@ public class Program
     static void Main()
     {
         SafeFibonacci(-1);
-        SafeFibonacci(0);
+        SafeFibonacci(1);
+        SafeFibonacci(2);
+        SafeFibonacci(3);
+        SafeFibonacci(4);
+        SafeFibonacci(5);
+        SafeFibonacci(6);
         SafeFibonacci(7);
         SafeFibonacci(8);
+        SafeFibonacci(9);
+        SafeFibonacci(10);
         SafeFibonacci(50);
         SafeFibonacci(250);
         SafeFibonacci(500);
@@ -33,13 +40,13 @@ public class Program
         { 
             throw new ArgumentException($"The handling of negative numbers ({n}) is not handled by this implementation of Fibonacci!"); 
         }
-        var memo = new BigInteger[n + 1];
+        var memo = new Dictionary<int, BigInteger>();
         return Fibonacci(n, memo);
     }
 
-    private static BigInteger Fibonacci(int n, BigInteger[] memo)
+    private static BigInteger Fibonacci(int n, Dictionary<int, BigInteger> memo)
     {
-        if (memo[n] != 0) return memo[n];
+        if (memo.ContainsKey(n)) return memo[n];
 
         if (n <= 2)
         {
