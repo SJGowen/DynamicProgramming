@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fib", "fib\fib.csproj", "{C3F6709A-0C96-4B21-8AFD-119F7972A256}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grid-traveller", "grid-traveller\grid-traveller.csproj", "{D771478F-DD7D-4240-BB02-34CE6AE1EE93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grid-traveller", "grid-traveller\grid-traveller.csproj", "{D771478F-DD7D-4240-BB02-34CE6AE1EE93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "can-sum", "can-sum\can-sum.csproj", "{BB17CB37-8E7C-48C2-A09A-A9991CDCF4C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D771478F-DD7D-4240-BB02-34CE6AE1EE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D771478F-DD7D-4240-BB02-34CE6AE1EE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D771478F-DD7D-4240-BB02-34CE6AE1EE93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB17CB37-8E7C-48C2-A09A-A9991CDCF4C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB17CB37-8E7C-48C2-A09A-A9991CDCF4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB17CB37-8E7C-48C2-A09A-A9991CDCF4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB17CB37-8E7C-48C2-A09A-A9991CDCF4C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
